@@ -48,11 +48,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntitySystem\Components\Bullet.cs" />
+    <Compile Include="EntitySystem\Components\Enemy.cs" />
+    <Compile Include="EntitySystem\Components\Expiration.cs" />
+    <Compile Include="EntitySystem\Components\KeyboardControl.cs" />
+    <Compile Include="EntitySystem\Components\Model.cs" />
+    <Compile Include="EntitySystem\Components\Position.cs" />
+    <Compile Include="EntitySystem\Components\Weapon.cs" />
     <Compile Include="EntitySystem\Entity.cs" />
     <Compile Include="EntitySystem\EntityManager.cs" />
     <Compile Include="EntitySystem\Keyboard.cs" />
     <Compile Include="EntitySystem\Matrix4.cs" />
     <Compile Include="EntitySystem\SystemBase.cs" />
+    <Compile Include="EntitySystem\Systems\RenderingSystem.cs" />
+    <Compile Include="EntitySystem\Templates\BulletSystem.cs" />
+    <Compile Include="EntitySystem\Templates\EnemyTemplate.cs" />
+    <Compile Include="EntitySystem\Templates\PlayerTemplate.cs" />
     <Compile Include="EntitySystem\Vector3.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -88,10 +99,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EntitySystem\Components\" />
-    <Folder Include="EntitySystem\System\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
