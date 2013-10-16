@@ -7,6 +7,7 @@
 	using System.Windows.Forms;
 	using EStroids.EntitySystem;
 	using EStroids.EntitySystem.Systems;
+	using EStroids.EntitySystem.Templates;
 
 	static class Program
 	{
@@ -25,8 +26,16 @@
 				var manager = new EntityManager();
 				var keyboard = new Keyboard();
 				var systems = new SystemBase[] {
+					new EnemySpawnSystem(manager),
+					new FieldOfPlaySystem(manager),
+					new BulletEnemyCollisionSystem(manager),
+					new KeyboardSystem(manager, form, keyboard),
+					new LifetimeSystem(manager),
+					new MovementSystem(manager),
 					new RenderingSystem(form, manager)
 				};
+
+				PlayerTemplate.Create(manager);
 
 				form.KeyDown += (s, e) => keyboard.KeyDown(e.KeyCode);
 				form.KeyUp += (s, e) => keyboard.KeyUp(e.KeyCode);

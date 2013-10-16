@@ -60,6 +60,12 @@
     <Compile Include="EntitySystem\Keyboard.cs" />
     <Compile Include="EntitySystem\Matrix4.cs" />
     <Compile Include="EntitySystem\SystemBase.cs" />
+    <Compile Include="EntitySystem\Systems\BulletEnemyCollisionSystem.cs" />
+    <Compile Include="EntitySystem\Systems\EnemySpawnSystem.cs" />
+    <Compile Include="EntitySystem\Systems\FieldOfPlaySystem.cs" />
+    <Compile Include="EntitySystem\Systems\KeyboardSystem.cs" />
+    <Compile Include="EntitySystem\Systems\LifetimeSystem.cs" />
+    <Compile Include="EntitySystem\Systems\MovementSystem.cs" />
     <Compile Include="EntitySystem\Systems\RenderingSystem.cs" />
     <Compile Include="EntitySystem\Templates\BulletSystem.cs" />
     <Compile Include="EntitySystem\Templates\EnemyTemplate.cs" />
