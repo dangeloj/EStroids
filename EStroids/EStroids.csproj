@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntitySystem\Entity.cs" />
+    <Compile Include="EntitySystem\EntityManager.cs" />
+    <Compile Include="EntitySystem\Keyboard.cs" />
+    <Compile Include="EntitySystem\Matrix4.cs" />
+    <Compile Include="EntitySystem\SystemBase.cs" />
+    <Compile Include="EntitySystem\Vector3.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
